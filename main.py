@@ -23,14 +23,14 @@ profit_loss_change = 0
 
 
 # Change directory to the directory of current python script
-os.chdir(os.path.dirname(__file__))
-#C:\Users\Angiescomputer\Desktop\Resources
-# Path to collect data from the Resources folder
-budget_data_csv_path = os.path.join("Resources", "budget_data.csv")
+#os.chdir(r'C:\Users\Angiescomputer\LearnPython\Resources')
 
-# copied path C:\Users\Angiescomputer\LearnPython\Resources\budget_data.csv
+# Path to collect data from the Resources folder
+budget_data_csv_path = os.path.join("budget_data.csv")
+
+#C:\Users\Angiescomputer\LearnPython\Resources\budget_data.csv
 # Open and read csv
-with open(budget_data_csv_path, newline="") as csvfile:
+with open(budget_data_csv_path, encoding="UTF-8") as csvfile:
 
     csv_reader = csv.reader(csvfile, delimiter=",")
 
